@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>games_mintic</title>
+<style type="text/css">
+ 
+body, html { height:100%;
+	margin:0;
+	padding:0;
+	width:100%;
+	background-color:white;
+	}
+ 
+#uno{ border:1px solid black;
+	width:100%;
+	display:inline-block;
+	margin-bottom: 0;
+	height:20%;
+	background-color:blue;
+	}
+#dos{ border:1px solid black;
+	width:100%;
+	display:inline-block;
+	margin-bottom: 0;
+	height:70%;
+	background-color:white;
+	}
+#dos1{ border:1px solid black;
+	width:100%;
+	display:inline-block;
+	margin-bottom: 0;
+	height:30%;
+	background-color:white;
+	}
+#tres{ border:1px solid black;
+	width:30%;
+	display:inline-block;
+	margin-bottom: 0;
+	height:70%;
+	background-color:white;
+	}
+#tres1{ border:1px solid black;
+	width:30%;
+	display:inline-block;
+	margin-bottom: 0;
+	height:25%;
+	background-color:white;
+	}
+#tres2{ border:1px solid black;
+	width:30%;
+	display:inline-block;
+	margin-bottom: 0;
+	height:40%;
+	background-color:white;
+	}
+
+</style>
+</head>
+<body>
+	<script src="scriptm.js">
+    </script>
+ 	<div id="uno">
+		<div>
+			<button><a href="index.html"><img src="images/Juegos_MINTIC.PNG"/></a></button>
+		</div>
+	</div>
+	<div id="dos1">
+		<h2 align="left">Menú de inicio</h2>
+		<div id="tres1">
+			<button onclick="obtenerItems1()">Mensajes Disponibles</button>
+		</div>
+		<div id="tres1">
+			<button onclick="busca1()">Buscar</button>
+			<button onclick="actualizar1()">Actualizar</button>
+			<button onclick="peticionDelete1()">Eliminar</button>
+			<button onclick="peticionPost1()">Crear</button>
+		</div>
+		<div id="tres1">
+			<input type="number" id="miId2" placeholder="Id2">
+			<input type="text" id="message" placeholder="Mensaje">
+
+		</div>
+	</div>
+
+	<div id="dos">
+		
+			<table>
+				<tr>
+					<th>id_Mensaje</th>
+					<th>Mensaje</th>
+				 </tr>
+				<tbody id="miResultado1">
+				</tbody>
+			</table>
+	</div>
+</body>
+</html>
